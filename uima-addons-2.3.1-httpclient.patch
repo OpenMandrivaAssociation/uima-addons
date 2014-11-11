@@ -1,0 +1,21 @@
+--- SimpleServer/src/main/java/org/apache/uima/simpleserver/util/HttpClientUtils.java	2011-08-24 09:50:00.000000000 +0200
++++ SimpleServer/src/main/java/org/apache/uima/simpleserver/util/HttpClientUtils.java-gil	2013-09-09 15:46:38.106704930 +0200
+@@ -44,13 +44,13 @@
+     url = new URL("http", host, port, file);
+     method = new HttpGet(url.toString());
+     HttpResponse response = null;
+-    try {
++//    try {
+     response = httpClient.execute(method);
+-    } catch (InterruptedException e) {
++//    } catch (InterruptedException e) {
+       // If we get here, something's seriously wrong
+-      e.printStackTrace();
+-      return null;
+-    }
++//      e.printStackTrace();
++//      return null;
++//    }
+     return response;
+   }
+ 

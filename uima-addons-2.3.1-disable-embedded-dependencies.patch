@@ -1,0 +1,20 @@
+--- uima-addons-parent/pom.xml	2011-08-24 09:50:02.000000000 +0200
++++ uima-addons-parent/pom.xml-gil	2013-09-09 13:24:26.636180564 +0200
+@@ -456,15 +456,11 @@
+ 	                <buildDirectory>${project.build.directory}/osgi</buildDirectory>
+ 	                <manifestLocation>${project.build.directory}/osgi/META-INF</manifestLocation>
+ 	                <instructions>
+-	                  <Import-Package>org.apache.log.*;resolution:=optional</Import-Package>
+-	                  <Embed-Dependency>*;scope=compile;</Embed-Dependency>
+-	                  <Embed-Directory>lib</Embed-Directory>
++	                  <Import-Package>*;resolution:=optional</Import-Package>
+ 	                  <Bundle-RequiredExecutionEnvironment>J2SE-1.5</Bundle-RequiredExecutionEnvironment>
+ 	                  <Eclipse-ExtensibleAPI>true</Eclipse-ExtensibleAPI>
+-                    <Bundle-ClassPath>.,lib/${project.build.finalName}.jar,{maven-dependencies},lib/uimaj-core-${uimaDependencyVersion}.jar</Bundle-ClassPath>
+                     <Include-Resource>
+-                      {maven-resources}, {maven-dependencies},
+-                      lib/uimaj-core-${uimaDependencyVersion}.jar=${settings.localRepository}/org/apache/uima/uimaj-core/${uimaDependencyVersion}/uimaj-core-${uimaDependencyVersion}.jar
++                      {maven-resources}
+                     </Include-Resource>
+ 	                  <Bundle-Version>${parsedVersion.osgiVersion}</Bundle-Version>
+ 	                  <Bundle-SymbolicName>${project.groupId}.${project.artifactId};singleton:=true</Bundle-SymbolicName>
