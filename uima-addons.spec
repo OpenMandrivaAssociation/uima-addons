@@ -1,3 +1,4 @@
+%{?_javapackages_macros:%_javapackages_macros}
 Name:          uima-addons
 Version:       2.3.1
 Release:       3%{?dist}
