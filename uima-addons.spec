@@ -4,7 +4,7 @@ Version:       2.3.1
 Release:       3%{?dist}
 Summary:       Apache UIMA Addons components
 License:       ASL 2.0
-URL:           http://uima.apache.org/sandbox.html
+URL:           https://uima.apache.org/sandbox.html
 Source0:       http://www.apache.org/dist/uima/%{name}-%{version}-source-release.zip
 # fix bundle plugin configuration
 Patch0:        %{name}-%{version}-disable-embedded-dependencies.patch
